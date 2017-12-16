@@ -1,0 +1,85 @@
+
+{Information Theory and Source Coding}
+\textbf{\textit{(Last Section of MA4413 Course)}}\\
+\bigskip
+\textbf{Introduction : } Information theory provides a quantitative measure of the information contained in message signal and allows us to determine the capacity of a communication system to transfer this information from source to destination. \\ \bigskip ln this part of the course, we will explore some basic ideas involved in information theory and source coding.
+
+
+
+%---------------------------------------------------------------------------------------------%
+
+{Introduction to Information Theory}
+\begin{itemize}
+\item Information theory is a process that focuses on the task of quantifying information. 
+\item The quantification of information is achieved by identifying viable methods of compressing and communicating data without causing 
+and degradation in the integrity of the data. 
+\item Information theory can be utilized in a number of different fields, including quantum computing, 
+data analysis and cryptography.
+\end{itemize}
+
+%---------------------------------------------------------------------------------------------%
+
+{Introduction to Information Theory}
+\begin{itemize}
+\item The origin of modern informational theory is usually attributed to Claude E. Shannon.
+\item His work A Mathematical Theory of Communication, first published in 1948, 
+lays the foundation for the quantification and compression of data into viable units that may be stored for easy retrieval later. 
+\item His basic approach provided the tools necessary to enhance the efficiency of early mainframe computer systems, and translated easily into 
+the advent of desktop computers during the decade of the 1970’s.
+\end{itemize}
+
+%---------------------------------------------------------------------------------------------%
+
+\section{Introduction to Information Theory}
+\begin{itemize}
+
+\item As a branch of both electrical engineering and applied mathematics, information theory seeks to uncover the most efficient 
+methods of conveying data, within the limits inherent in the data proper. \item The idea is to ensure that the mass transit of data does 
+not in any way decrease the quality, even if the data is compressed in some manner. 
+\end{itemize}
+
+%---------------------------------------------------------------------------------------------%
+
+\begin{itemize}
+\item Ideally, the data can be restored to its original form upon reaching its destination. 
+\item In some cases, however, the goal is to allow data in one form to be converted for mass transmission, 
+received at the point of termination, and easily converted into a format other than the original without losing any of the transmitted information.
+\end{itemize}
+
+
+
+\section{What is Information?}
+
+\begin{itemize} \item  What is meant by the ``information" contained in an event?
+\item If we are formally to defined a quantitative measure of information contained in an event, this measure should have some intuitive properties such as:
+\begin{itemize} \item [1.] Information contained in events ought to be defined in terms of some measure of the uncertainty of the events.
+\item [2.] Less certain events ought to contain more information than more certain events.
+\item [3.] The information of unrelated / independent events taken as a single event should equal the sum of the information of the unrelated events.
+\end{itemize}
+
+\item A natural measure of the uncertainty of an event is the probability of $A$ denoted $P(A)$.
+\end{itemize}
+
+\textbf{1) Information sources:}
+
+An information source is an object that produces an event, the outcome of which is selected at
+random according to a probability distribution.  \\ \bigskip A practical source in a communication system is a
+device that produces messages, and it can be either analog or discrete (we deal mainly
+with the discrete sources, since analog sources can be transformed to discrete sources) \\ \bigskip A discrete information source is a
+source that has only a finite set of symbols as possible outputs. The set of source symbols is called the
+\textbf{\emph{source alphabet}}, and the elements of the set are called \textbf{\emph{ symbols}} or \textbf{\emph{letters}}.
+
+%----------------------------------------------------------------------------------------------------------%
+
+\section{Memory}
+\begin{itemize} \item Information sources can be classified as having memory or being memoryless.
+\item A source with
+memory is one for which a current symbol depends on the previous symbols.\item A memoryless source is
+one for which each symbol produced is independent of the previous symbols.
+
+\item A discrete memoryless sources (DMS) can be characterized by the list of the symbols, the
+probability assignment to these symbols, and the specification of the rate of generating these symbols by the source.\end{itemize}
+
+
+%----------------------------------------------------------------------------------------------------------%
+
