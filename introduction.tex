@@ -1,28 +1,89 @@
+\documentclass[]{article}
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+
+
+\section{Information}
+
+Information of an event $x_i$ (also known as self-information) is related to the probability of that event by the following formula:
+\[  I(x) = -\mbox{log}_2 \left( p(x_i) \right) \]
+The less probable an event is, the higher the information of that event. Very unusual events are ``high information" events. Commonly occuring events are ``low information". Consider the table below.
+{
+\large
+\begin{center}
+\begin{tabular}{|r|r|}
+\hline $p(x_i)$	&	$I(x_i)$	\\ \hline
+0.00001	&	16.609640000	\\ \hline
+0.0001	&	13.287712000	\\ \hline
+0.001	&	9.965784000	\\ \hline
+0.01	&	6.643856000	\\ \hline
+0.1	&	3.321928000	\\ \hline
+0.2	&	2.321928000	\\ \hline
+0.4	&	1.321928100	\\ \hline
+0.5	&	1.000000000	\\ \hline
+0.6	&	0.736965600	\\ \hline
+0.7	&	0.514573200	\\ \hline
+0.8	&	0.321928090	\\ \hline
+0.9	&	0.152003090	\\ \hline
+0.95	&	0.074000580	\\ \hline
+0.99	&	0.014499570	\\ \hline
+0.99999	&	0.000014427	\\ \hline
+0.9999999	&	0.000000144	\\ \hline
+\end{tabular} 
+\end{center}
+}
+
+\end{document}
+
+%--------------------------------------------------%
+\subsection*{Entropy}
+
+The entropy of a probability distribution is a number that describes the degree of uncertainty or disorder the distribution represents.
+
+
+\begin{itemize}
+\item Assume we have a set of two mutually exclusive propositions (or equivalently, a random experiment with two possible outcomes). Assume all two possibilities are equally likely.
+
+\item Then our advance uncertainty about the eventual outcome is rather small - we know in advance it will be one of exactly two known alternatives.
+
+\item Assume now we have a set of a million alternatives - all of them equally likely - rather than two.
+
+It seems clear that our uncertainty now about the eventual outcome will be much bigger.
+\end{itemize}
+\textbf{Formal definitions}
+
+Given a discrete probability distribution function f, the entropy H of the distribution (measured in bits) is given by 
+
+\[H=-\sum_{\forall i : f(x_i) \ne 0}^{} f(x_{i}) log_{2} f(x_{i} )\]
+\subsection*{Mutual Information}
+
+Theory of the probability of transmission of messages with specified accuracy when the bits of information constituting the messages are subject, with certain probabilities, to transmission failure, distortion, and accidental additions.
 %-------------------------------------------------------------------------------%
 
 \subsection{Information Theory}
-
+\begin{itemize}\item 
 The fundamental quantities of information theory entropy, relative
 entropy, and mutual information are defined as functionals of
-probability distributions. In turn, they characterize the behavior
+probability distributions.
+\item In turn, they characterize the behavior
 of long sequences of random variables and allow us to estimate the
 probabilities of rare events (large deviation theory) and to find
 the best error exponent in hypothesis tests.
-
-
-%-------------------------------------------------------------------------------%
-
-\subsection{Information Theory}
+\item 
 
 The initial questions treated by information theory lay in the
 areas of data compression and transmission. The answers are
 quantities such as entropy and mutual information, which are
 functions of the probability distributions that underlie the
-process of communication. A few definitions will aid the initial
+process of communication. 
+\item A few definitions will aid the initial
 discussion. We repeat these definitions in Chapter 2. The entropy
 of a random variable X with a probability mass function p(x) is
 defined by $H(X) = -\sum x p(x) log2 p(x)$. 
-
+\end{itemize}
 
 
 %-------------------------------------------------------------------------------%
@@ -55,11 +116,7 @@ all the outcomes have representations of the same length.
 	random variable conditional on the knowledge of another random
 	variable. The reduction in uncertainty due to another random
 	variable is called the mutual information.
-}
 
-%-----------------------------------------------------------------------------------------------%
-{
-	\subsection{Information Entrophy}
 	Information entropy is a measure of the uncertainty associated
 	with a random variable. The term by itself in this context usually
 	refers to the Shannon entropy, which quantifies, in the sense of
@@ -70,14 +127,8 @@ all the outcomes have representations of the same length.
 	\begin{equation}
 	H(X) =   - \sum_{i=1}^np(x_i)\log_b p(x_i).
 	\end{equation}
-}
 
-
-
-%-----------------------------------------------------------------------------------------------%
-
-{
-	\subsection{Example}
+\subsection{Example}
 	
 	A source language has 5 symbols A, B, C, D and E.  The associated
 	probabilities of these symbols are 0.35, 0.25, 0.20, 0.10 and
@@ -91,19 +142,12 @@ all the outcomes have representations of the same length.
 }
 
 
-%----------------------------------------------------------------%
-\newpage
-%----------------------------------------------------------------%
-{Information Theory and Source Coding}
-\textbf{\textit{(Last Section of MA4413 Course)}}\\
-\bigskip
-\textbf{Introduction : } Information theory provides a quantitative measure of the information contained in message signal and allows us to determine the capacity of a communication system to transfer this information from source to destination. \\ \bigskip ln this part of the course, we will explore some basic ideas involved in information theory and source coding.
+\section{Information Theory}
+
+Information theory provides a quantitative measure of the information contained in message signal and allows us to determine the capacity of a communication system to transfer this information from source to destination. \\ \bigskip ln this part of the course, we will explore some basic ideas involved in information theory and source coding.
 
 
 
-%---------------------------------------------------------------------------------------------%
-
-{Introduction to Information Theory}
 \begin{itemize}
 \item Information theory is a process that focuses on the task of quantifying information. 
 \item The quantification of information is achieved by identifying viable methods of compressing and communicating data without causing 
@@ -112,30 +156,19 @@ and degradation in the integrity of the data.
 data analysis and cryptography.
 \end{itemize}
 
-%---------------------------------------------------------------------------------------------%
 
-{Introduction to Information Theory}
 \begin{itemize}
 \item The origin of modern informational theory is usually attributed to Claude E. Shannon.
 \item His work A Mathematical Theory of Communication, first published in 1948, 
 lays the foundation for the quantification and compression of data into viable units that may be stored for easy retrieval later. 
 \item His basic approach provided the tools necessary to enhance the efficiency of early mainframe computer systems, and translated easily into 
 the advent of desktop computers during the decade of the 1970’s.
-\end{itemize}
 
-%---------------------------------------------------------------------------------------------%
-
-\section{Introduction to Information Theory}
-\begin{itemize}
 
 \item As a branch of both electrical engineering and applied mathematics, information theory seeks to uncover the most efficient 
 methods of conveying data, within the limits inherent in the data proper. \item The idea is to ensure that the mass transit of data does 
 not in any way decrease the quality, even if the data is compressed in some manner. 
-\end{itemize}
 
-%---------------------------------------------------------------------------------------------%
-
-\begin{itemize}
 \item Ideally, the data can be restored to its original form upon reaching its destination. 
 \item In some cases, however, the goal is to allow data in one form to be converted for mass transmission, 
 received at the point of termination, and easily converted into a format other than the original without losing any of the transmitted information.
@@ -178,3 +211,4 @@ probability assignment to these symbols, and the specification of the rate of ge
 
 %----------------------------------------------------------------------------------------------------------%
 
+\end{document}
